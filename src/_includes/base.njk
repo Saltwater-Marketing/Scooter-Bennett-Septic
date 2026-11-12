@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/images/drain-field-install.webp">
+<link rel="icon" href="/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+{% if site.ga4 %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4 }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ site.ga4 }}');</script>{% endif %}
+{% if schema == "home" %}{% include "schema-home.njk" %}{% endif %}
+</head>
+<body>
+<div style="font-family: 'Barlow', Arial, sans-serif; color: #1F1F1F; background: #FFFFFF; font-size: 18px; line-height: 1.6">
+{% include "header.njk" %}
+<main>
+{{ content | safe }}
+</main>
+{% include "footer.njk" %}
+</div>
+</body>
+</html>

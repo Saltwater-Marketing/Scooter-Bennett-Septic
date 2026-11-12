@@ -1,0 +1,7 @@
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0}
+img{max-width:100%}
+a{color:#C2410C}a:hover{color:#141414}
+section[id]{scroll-margin-top:16px}
+.mbar{display:none}
+@media (max-width:720px){.mbar{display:flex}.navlinks{display:none !important}}
