@@ -17,7 +17,7 @@ Home (/), Services (/services/, one section per service), About (/about/), Servi
 Netlify Forms (form name "estimate"). After the first deploy, set the notification email in Netlify: Forms > estimate > Form notifications. Successful sends go to /thank-you/.
 
 ## Before launch
-Replace every [BRACKETED] placeholder: hours, privacy policy text. Check site.url in site.json matches the live domain (www or not).
+Replace every [BRACKETED] placeholder: hours. Check site.url in site.json matches the live domain (www or not).
 
 ## Deploy
 Push to main. Netlify builds with `npm run build` and publishes `_site`.
