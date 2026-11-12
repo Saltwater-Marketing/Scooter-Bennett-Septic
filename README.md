@@ -6,9 +6,9 @@ Static site built with Eleventy, hosted on Netlify. Domain: scooterbennettseptic
 Home (/), Services (/services/, one section per service), About (/about/), Service Areas (/service-areas/), Contact (/contact/), plus Thank You, Privacy and 404.
 
 ## Where to change things
-- Phone, email, address, Facebook, GA4 ID: `src/_data/site.json`
+- Phone, email, Facebook, GA4 ID: `src/_data/site.json`
 - Header and menu: `src/_includes/header.njk`
-- Footer and mobile Call Now bar: `src/_includes/footer.njk` (also holds email, address, hours and FL DOH number placeholders)
+- Footer and mobile Call Now bar: `src/_includes/footer.njk` (also holds email, hours and FL DOH number placeholders). No street address is shown anywhere: this is a service area business.
 - Page copy: `src/index.njk`, `src/services.njk`, `src/about.njk`, `src/service-areas.njk`, `src/contact.njk`
 - Home page schema and FAQ schema: `src/_includes/schema-home.njk` (keep FAQ text matching the page)
 - Images: `src/images/` (WebP)
@@ -17,7 +17,7 @@ Home (/), Services (/services/, one section per service), About (/about/), Servi
 Netlify Forms (form name "estimate"). After the first deploy, set the notification email in Netlify: Forms > estimate > Form notifications. Successful sends go to /thank-you/.
 
 ## Before launch
-Replace every [BRACKETED] placeholder: business email, street number and ZIP, hours, FL DOH registration number, privacy policy text. Check site.url in site.json matches the live domain (www or not).
+Replace every [BRACKETED] placeholder: hours, FL DOH registration number, privacy policy text. Check site.url in site.json matches the live domain (www or not).
 
 ## Deploy
 Push to main. Netlify builds with `npm run build` and publishes `_site`.
