@@ -17,3 +17,39 @@ section[id]{scroll-margin-top:16px}
 .svcnav a:hover .svcnav-arrow{transform:translateY(3px)}
 @media (max-width:1000px){.svcnav{grid-template-columns:repeat(3,1fr)}.svcnav a{border-bottom:1px solid rgba(255,255,255,.1)}.svcnav a:nth-child(3n){border-right:1px solid rgba(255,255,255,.1)}}
 @media (max-width:600px){.svcnav{grid-template-columns:repeat(2,1fr);padding:0}.svcnav a{padding:18px 16px;border-left:0;border-right:0 !important}.svcnav a:nth-child(odd){border-right:1px solid rgba(255,255,255,.1) !important}.svcnav-label{font-size:19px}}
+.areas{background:#FFFFFF;position:relative;overflow:hidden}
+.areas::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:#EB5F1E}
+.areas-inner{max-width:1200px;margin:0 auto;padding:96px 24px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
+.areas-intro{display:flex;flex-direction:column;gap:18px;position:sticky;top:24px}
+.areas-eyebrow{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;color:#C2410C;font-size:18px;letter-spacing:.08em}
+.areas-intro h2{margin:-10px 0 0;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(40px,4.6vw,60px);line-height:.98;color:#141414}
+.areas-intro p{margin:0}
+.areas-base{display:flex;gap:14px;align-items:center;padding:18px 20px;background:#141414;color:#FFFFFF;border-radius:10px}
+.areas-base .area-pin{background:#EB5F1E;color:#141414}
+.areas-base div{display:flex;flex-direction:column;gap:2px}
+.areas-base strong{font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;font-size:22px;letter-spacing:.01em}
+.areas-base span{font-size:16px}
+.areas-ctas{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.areas-call{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;background:#EB5F1E;color:#141414;border-radius:6px;text-decoration:none;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;font-size:21px}
+.areas-call:hover{background:#141414;color:#FFFFFF}
+.areas-link{font-weight:700;color:#C2410C}
+.areas-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.area-card{display:flex;flex-direction:column;gap:14px;padding:22px;background:#FFFFFF;border:1px solid #E5E7EB;border-left:5px solid #EB5F1E;border-radius:10px;box-shadow:0 6px 18px rgba(20,20,20,.06);transition:transform .2s,box-shadow .2s}
+.area-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(20,20,20,.12)}
+.area-card.is-home{background:#141414;border-color:#141414;border-left-color:#EB5F1E;grid-column:1/-1}
+.area-card.is-home h3{color:#FFFFFF}
+.area-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.area-head h3{margin:0;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;font-size:26px;line-height:1;color:#141414}
+.area-pin{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;flex:none;border-radius:50%;background:#FDE9DE;color:#C2410C}
+.is-home .area-pin{background:#EB5F1E;color:#141414}
+.area-home{margin-left:auto;padding:4px 10px;border-radius:999px;background:#EB5F1E;color:#141414;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;font-size:15px;letter-spacing:.04em}
+.area-towns{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.area-towns li{padding:6px 12px;border-radius:999px;background:#F3F4F6;color:#141414;font-size:15px;font-weight:600}
+.is-home .area-towns li{background:#2A2A2A;color:#FFFFFF}
+@media (max-width:900px){.areas-inner{grid-template-columns:1fr;gap:36px;padding:72px 24px}.areas-intro{position:static}}
+@media (max-width:560px){.areas-grid{grid-template-columns:1fr}.area-home{margin-left:0}}
+.area-head{flex-wrap:nowrap}
+.area-head h3{font-size:24px;white-space:nowrap}
+.area-card:last-child{grid-column:1/-1}
+.areas-base strong{line-height:1.1}
+@media (max-width:560px){.area-head{flex-wrap:wrap}.area-head h3{white-space:normal}}
