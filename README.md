@@ -21,3 +21,6 @@ All placeholders are filled. No GA4 ID is set (leave "ga4" blank in site.json un
 
 ## Deploy
 Push to main. Netlify builds with `npm run build` and publishes `_site`.
+
+## Changing a photo
+Images are cached by browsers for a year. When you replace a photo, give the new file a new name (e.g. add `-2026` or `-v2`) and update the page that uses it, or phones that already visited will keep showing the old one.
