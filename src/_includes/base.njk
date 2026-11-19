@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ title }}</title>
 <meta name="description" content="{{ description }}">
+{% if page.url == "/" and site.gscVerification %}<meta name="google-site-verification" content="{{ site.gscVerification }}" />{% endif %}
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ site.name }}">
